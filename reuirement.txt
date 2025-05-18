@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+transformers
+torch
+trafilatura
+requests
+streamlit
+langchain-community
+python-dotenv
