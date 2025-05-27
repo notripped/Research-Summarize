@@ -18,7 +18,7 @@ An intelligent research assistant that fetches top search results for your query
 
 ## Demo
 
-[Optional: Add a link or screenshot of your deployed app]
+
 
 ---
 
