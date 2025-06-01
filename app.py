@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-
+from videofetcher import get_video_summaries
 st.set_page_config(page_title="AI Research Summarizer", layout="centered")
 
 st.title("🔍 AI Research Summarizer")
@@ -22,3 +22,9 @@ if st.button("Search & Summarize") and query:
                 st.write(item["summary"])
         except Exception as e:
             st.error(f"Error: {e}")
+if st.button("Search Videos"):
+    results = get_video_summaries(query)
+    for video in results:
+        st.video(video["url"])
+        st.write(f"**{video['title']}**")
+        st.write(video["summary"])
